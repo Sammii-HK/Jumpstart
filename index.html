@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Jumpstart</title>
-	
+
 <!--  Stylesheets & CDNs  -->
 <link href="resources/css/reset.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link href="resources/css/style.css" rel="stylesheet" type="text/css">
 	<script
@@ -16,62 +16,115 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="resources/javascript/scripts.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
-	
+
 <!--  Favicon  -->
 <link href="resources/images/favicon.png" rel="icon" type="image/xicon">
 </head>
 
-<body class="col-lg-12">
-	<div class="row">
-	
+<body>
+<div class="container col">
+
 <!--  Nav Bar Top  -->
-		<nav class="navbar navbar-default">
-			<ul>
-				<a href="#">Explore</a>
-				<a href="#">Start a Project</a>
-				<a href="#">About us</a>
-			</ul>
-			<img class="col-lg-12 logo" src="resources/images/logo.png" alt="logo">
-		</nav>
-	
+		<div class="row">
+		  <div class="col top-nav">
+				<nav class="col navbar navbar-default">
+					<ul>
+						<a href="#">Explore</a>
+						<a href="#">Start a Project</a>
+						<a href="#">About us</a>
+					</ul>
+					<img class="logo" src="resources/images/logo.png" alt="logo">
+				</nav>
+			</div>
+		</div>
+
 <!--  Content  -->
-		<div class="jumbotron get-going">
-			<h1>GET GOING</h1>
-			<p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
-			<button href="#">Jump in</button>
-		</div>
-		
-<!--  Featured Project  -->
-		<div class="featured-proj" col-lg-12>
-			<h1>Featured Project</h1>
-			<img class="col-lg-6" alt="Featured image project image" src="resources/images/featured-project.png">
-			<div class="proj-title col-lg-3">
-				<h2>Project Title</h2>
-				<p></p>
+		<div class="row">
+			<div class="">
+				<div class="jumbotron get-going">
+					<h1 class="jumbo-title">GET GOING</h1>
+					<p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
+					<button href="#">Jump in</button>
+				</div>
 			</div>
-			<div class="proj-categories col-lg-3">
-				<h2>Project Categories</h2>
-				<ul>
-					<li>Art</li>
-					<li>Books</li>
-					<li>Crystals</li>
-					<li>Design</li>
-					<li>Dodles</li>
-					<li>Deedlybobs</li>
-					<li>Farming</li>
-					<li>Gadgets</li>
-					<li>Hoverboards</li>
-					<li>Jams, Jellies, Etc.</li>
-					<li>Magazines</li>
-					<li>Plants</li>
-					<li>Snakes &amp; Snake Equipment</li>
-					<li>Tables</li>
-					<li>Ventrilliquist Figures</li>
-					<li>Yoyos</li>
-				</ul>
+		</div>
+
+<!--  Featured Project  -->
+		<div class="featured-proj">
+			<div class="row">
+				<div class="col">
+				  <h1>Featured Project</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<img alt="Featured image project image" src="resources/images/featured-project.png">
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 proj-title">
+					<h2>Project Title</h2>
+					<p class="author">by Leo De Firenze</p>
+					<p>DeFrost is a documentary about growing up in a little red house in a cold, harsh valley. This is a story about my mother's childhood. This film attempts to capture vignettes of her upbringing â€” her family, friends, pets, and eventual depature from a freezing valley in Northern Italy â€” through beautiful cinematography and narration.</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 proj-categories">
+				  <h2 class="blue">Project Categories</h2>
+					<ul>
+						<li>Art</li>
+						<li>Books</li>
+						<li>Crystals</li>
+						<li>Design</li>
+						<li>Dodles</li>
+						<li>Deedlybobs</li>
+						<li>Farming</li>
+						<li>Gadgets</li>
+						<li>Hoverboards</li>
+						<li>Jams, Jellies, Etc.</li>
+						<li>Magazines</li>
+						<li>Plants</li>
+						<li>Snakes &amp; Snake Equipment</li>
+						<li>Tables</li>
+						<li>Ventrilliquist Figures</li>
+						<li>Yoyos</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<!--  Projects  -->
+		<div class="projects">
+			<div class="row">
+				<div class="col-12">
+					<h1>Projects</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<img src="resources/images/project1.png" alt="Right Tights image">
+					<h2>The Right Tights</h2>
+					<p class="author">by Riley Mae</p>
+					<p>These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
+				</div>
+				<div class="col-4">
+					<img src="resources/images/project2.png" alt="Peppermint Smart Home image">
+					<h2>Peppermint Smart Home</h2>
+					<p class="author">by Brian McDonald</p>
+					<p>Instantly upgrade your home with technology that keeps your family and home safe. We've made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
+					</div>
+				<div class="col-4">
+					<img src="resources/images/project3.png" alt="American Streetlife image">
+					<h2>American Streetlife</h2>
+					<p class="author">by Patrick Wallace</p>
+					<p>I've been traveling around the United States for the past two years. I've slept on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
+				</div>
 			</div>
 		</div>
 	
+<!--  Footer -->
+		<footer class="row">
+			<div class="col">
+				<h1 class="cta">Having trouble thinking of an idea?</h1>
+				<p>Inventorsâ€™ block strikes at the worst times. But thatâ€™s all changed with Jumpstartâ€™s Good Idea Generator Lite (GIGLi).</p>
+			</div>
+		</footer>
 	</div>
+	
 </body>
 </html>

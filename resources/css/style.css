@@ -7,6 +7,11 @@ html {
 	font-size: 14px;
 }
 
+body {
+	margin: auto;
+
+}
+
 button {
 	width: 11.4rem;
 	padding: 1.3rem;
@@ -22,48 +27,49 @@ h1 {
 	font-size: 1.7rem;
 	font-weight: bold;
 	color: #399bd1;
+	padding-top: 1rem;
+	padding-bottom: 1.4rem;
 }
 
 h2 {
 	font-size: 1.3rem;
 	font-weight: bold;
+	padding: 20px 0 5px 0;
 }
 
 .blue {
 	color: #399bd1;
 }
 
-.author {
-	
-}
+.author {}
 
 /*  Top Nav Bar  */
 .navbar {
-	display: inline-flex;
-	width: 100%;
-	height: auto;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0;
-	padding: 0;
 	
-	padding-left: 0;
+	display: flex;
+	align-items: center;
 }
 
 .navbar ul {
-	width: 400px;
-	padding: 0;
-	margin: 0;
+	
+	display: flex;
+	
 }
 
 .navbar ul a {
-	
 	padding-left: 20px;
 }
 
 .logo {
 	height: 20px;
-	width: 178px;	
+	width: 178px;
+	padding-right: 15px;
+}
+
+@media only screen and (max-width: 550px) {
+	.logo {
+		display: none;
+	}
 }
 
 /*  Jumbotron Main Banner  */
@@ -71,13 +77,13 @@ h2 {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	
-	max-width: 100%;
+
+/*	width: 100%; */
 	background-size: cover;
 	background-position: center;
 }
 
-.jumbotron h1 {
+.jumbo-title {
 	font-family: Monoton;
 	font-size: 7.1rem;
 	color: white;
@@ -90,17 +96,61 @@ h2 {
 	padding-top: 11.85rem;
 }
 
+@media only screen and (max-width: 800px) {
+	.jumbotron h1 {
+		font-size: 5.7rem;
+	}
+}
+
 .jumbotron p {
-	width: 51.3rem;
+	width: 90%;
+	max-width: 51.3rem;
 	text-align: center;
 	font-weight: 400;
 	color: #ffffff;
 	margin: auto;
-	padding-bottom: 2.8rem;  
+	padding-bottom: 2.8rem;
 }
 
 .get-going {
-	background-image: url(../images/jumbotron-bike.jpg);;
+	background-image: url(../images/jumbotron-bike.jpg);
+	
+/*	width: 100%; */
 }
 
+/*  Featured Project  */
 
+.featured-proj {
+	padding: 2%;
+}
+
+.featured-proj img {
+	width: 100%;
+	height: auto;
+}
+
+/*  Projects  */
+
+.projects {
+	padding: 2%;
+}
+
+.projects .col-4 img {
+	width: 100%;
+	height: auto;
+}
+
+/*  Footer  */
+
+footer {
+	background-color: #f3f3f3;
+}
+
+.cta {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+footer p {
+	width: 42rem;
+}
