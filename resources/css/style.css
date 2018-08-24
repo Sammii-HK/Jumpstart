@@ -3,13 +3,14 @@
 
 /*  Global Styles  */
 html {
-	font-family: Open Sans, Univers, sans-serif;
+	font-family: 'Open Sans', Univers, sans-serif;
 	font-size: 14px;
+	margin: 0;
 }
 
 body {
-	margin: auto;
-
+	margin: 0;
+	height: auto;
 }
 
 button {
@@ -45,15 +46,13 @@ h2 {
 
 /*  Top Nav Bar  */
 .navbar {
-	
-	display: flex;
-	align-items: center;
+
+	margin: 0;
+	padding-left: 0;
 }
 
 .navbar ul {
-	
-	display: flex;
-	
+	margin: 0;	
 }
 
 .navbar ul a {
@@ -78,7 +77,7 @@ h2 {
 	justify-content: center;
 	flex-direction: column;
 
-/*	width: 100%; */
+	width: 100%; 
 	background-size: cover;
 	background-position: center;
 }
@@ -133,6 +132,7 @@ h2 {
 
 .projects {
 	padding: 2%;
+	padding-bottom: 5.85rem;
 }
 
 .projects .col-4 img {
@@ -144,13 +144,30 @@ h2 {
 
 footer {
 	background-color: #f3f3f3;
+
+/*	display: inline-flex;
+	justify-content: center; */
 }
 
 .cta {
 	font-size: 2.5rem;
 	font-weight: bold;
+	color: rgba(0, 0, 0, 0.7);
+	padding: 5.2rem 0;
+	text-align: center;
 }
 
 footer p {
-	width: 42rem;
+	max-width: 42rem;
+	padding-bottom: 2.8rem;
+	text-align: center;
+	margin: auto;
+}
+
+footer button {
+	margin-bottom: 5rem;
+}
+
+.button-container {
+	display: flex;
 }
