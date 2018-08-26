@@ -9,12 +9,14 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link href="resources/css/style.css" rel="stylesheet" type="text/css">
-	<script
+	
+<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="resources/javascript/scripts.js"></script>
+	
 <link href="https://fonts.googleapis.com/css?family=Monoton|Open+Sans:400,600,700" rel="stylesheet">
 
 <!--  Favicon  -->
@@ -22,33 +24,47 @@
 </head>
 
 <body>
-<div class="container col">
+
 
 <!--  Nav Bar Top  -->
-		<div class="row">
-		  <div class="col top-nav">
-				<nav class="col navbar navbar-default">
-					<ul>
-						<a href="#">Explore</a>
-						<a href="#">Start a Project</a>
-						<a href="#">About us</a>
-					</ul>
-					<img class="logo" src="resources/images/logo.png" alt="logo">
-				</nav>
-			</div>
-		</div>
+	<div class="top-nav">
+		<nav class="navbar navbar-default">
+			<ul>
+				<a href="#">Explore</a>
+				<a href="#">Start a Project</a>
+				<a href="#">About us</a>
+			</ul>
+			<img class="logo" src="resources/images/logo.png" alt="logo">
+		</nav>
+	</div>
 
 <!--  Content  -->
-		<div class="row">
-			<div class="">
-				<div class="jumbotron get-going">
-					<h1 class="jumbo-title">GET GOING</h1>
-					<p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
-					<button href="#">Jump in</button>
-				</div>
+	<div class="carousel">
+		<div class="jumbotron">
+			<div class="jumbotron-bike">
+				<h1 class="jumbo-title">GET GOING</h1>
+				<p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
+				<button href="#">Jump in</button>
+			</div>
+			<div class="jumbotron-beer">
+				<h1 class="jumbo-title">GET THINKING</h1>
+				<p>Meet like-minded individuals who will help fuel your creative juices.</p>
+				<button href="#">Jump in</button>
+			</div>
+			<div class="jumbotron-flowers">
+				<h1 class="jumbo-title">GET CREATING</h1>
+				<p>Jumpstart your startup with some crowdsourced seed money, or support one of our 300,000,000+ creators and get rewards.</p>
+				<button href="#">Jump in</button>
+			</div>
+			<div class="jumbotron-duffel">
+				<h1 class="jumbo-title">GET STARTED</h1>
+				<p>What are you waiting for? Today is the day to start your next big idea.</p>
+				<button href="#">Jump in</button>
 			</div>
 		</div>
+	</div>
 
+	<div class="container">
 <!--  Featured Project  -->
 		<div class="featured-proj">
 			<div class="row">
@@ -58,7 +74,9 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<img alt="Featured image project image" src="resources/images/featured-project.png">
+					<div class="image-container">
+						<img alt="Featured image project image" src="resources/images/featured-project.png">
+					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6 proj-title">
 					<h2>Project Title</h2>
@@ -96,31 +114,39 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-4">
-					<img src="resources/images/project1.png" alt="Right Tights image">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project">
+					<div class="image-container">
+						<img src="resources/images/project1.png" alt="Project 1 image">
+					</div>
 					<h2>The Right Tights</h2>
 					<p class="author">by Riley Mae</p>
 					<p>These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
 				</div>
-				<div class="col-4">
-					<img src="resources/images/project2.png" alt="Peppermint Smart Home image">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project">
+					<div class="image-container">
+						<img src="resources/images/project2.png" alt="Project 2 image">
+					</div>
 					<h2>Peppermint Smart Home</h2>
 					<p class="author">by Brian McDonald</p>
 					<p>Instantly upgrade your home with technology that keeps your family and home safe. We've made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
 					</div>
-				<div class="col-4">
-					<img src="resources/images/project3.png" alt="American Streetlife image">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 project">
+					<div class="image-container">
+						<img src="resources/images/project3.png" alt="Project 3 image">
+					</div>
 					<h2>American Streetlife</h2>
 					<p class="author">by Patrick Wallace</p>
 					<p>I've been traveling around the United States for the past two years. I've slept on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
 				</div>
 			</div>
 		</div>
+	</div>
+	
 	
 <!--  Footer -->
-		<footer>
+		<footer class="container">
 			<div class="row justify-content-center">
-				<div class="col-11">
+				<div class="jumbotron-fluid">
 					<h1 class="cta">Having trouble thinking of an idea?</h1>
 					<p>Inventorsâ€™ block strikes at the worst times. But thatâ€™s all changed with Jumpstartâ€™s Good Idea Generator Lite (GIGLi).</p>
 				</div>
@@ -131,7 +157,6 @@
 				</div>
 			</div>
 		</footer> 
-	</div>
 	
 </body>
 </html>
