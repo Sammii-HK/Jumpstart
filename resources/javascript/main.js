@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  $('.corousel').slick({
+$(document).ready(function () {
+  $('.carousel').slick( {
 	rtl: true,
 	infinite: true,
 	speed: 300,
@@ -10,8 +10,11 @@ $(document).ready(function(){
 	autoplay: true,
 	autoplaySpeed: 4000,
 	arrows: false,
-	draggable: false
+	draggable: false,
 
   });
 });
 
+var navScrollHide.scroll() {
+	.scrollTop(this)
+}

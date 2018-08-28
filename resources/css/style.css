@@ -98,8 +98,10 @@ h2 {
 }
 
 .logo {
-	height: 20px;
-	width: 178px;
+	max-height: 20px;
+	height: auto;
+	max-width: 178px;
+	width: auto;
 	padding-right: 15px;
 }
 
@@ -109,21 +111,27 @@ h2 {
 	}
 }
 
+.logo img {
+	height: 50%;
+	width: auto;
+}
+
 /*  Jumbotron Main Banner  */
 .jumbotron {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-
-	/**/width: 100%; 
-	
+	width: 100%; 
 	background-size: cover;
 	background-position: center;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 8rem;
 }
 
 .jumbotron button {
 	display: fixed;
-	
+	width: 11.4rem;
 	
 	margin: auto;
 }
