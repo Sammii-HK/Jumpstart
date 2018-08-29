@@ -10,6 +10,4 @@ $(document).ready(function(){
   });
 })
 
-var navScrollHide.scroll() {
-	.scrollTop(this)
-}
+

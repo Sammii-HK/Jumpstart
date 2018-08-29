@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+* {
+	font-size: 14px;
+}
+
 /*  Global Styles  */
 html {
 	font-family: 'Open Sans', Univers, sans-serif;
@@ -18,15 +22,31 @@ body {
 	width: 100%;
 }
 
+.relative-wrapper {
+	position: relative;
+	top: -14rem;
+	height: auto;
+}
+
+.relative-wrapper a {
+	font-size: 14px;
+}
+
+.button,
 button {
 	width: 11.4rem;
+	height: auto;
 	padding: 1.3rem;
 	background-color: #399bd1;
 	color: #ffffff;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-	margin: auto;
+	margin: 0 auto;
 	border: none;
 	border-radius: 8px;
+	font-size: 14pt;
+	font-weight: normal;
+	display: flex;
+	justify-content: center;
 }
 
 h1 {
@@ -66,13 +86,14 @@ h2 {
 
 /*  Top Nav Bar  */
 .navbar {
-
 	margin: 0;
-	padding-left: 0;
+	padding: 1rem 0;
 }
 
 .navbar ul {
-	margin: 0;	
+	margin: 0;
+	font-size: 1.1rem;
+	font-weight: bold;
 }
 
 .navbar ul a {
@@ -117,23 +138,31 @@ h2 {
 }
 
 /*  Jumbotron Main Banner  */
-.jumbotron {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 100%; 
-	background-size: cover;
-	background-position: center;
+
+.carousel {
+	height: 100%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 8rem;
 }
 
-.jumbotron button {
-	display: fixed;
-	width: 11.4rem;
-	
-	margin: auto;
+.jumbotron {
+	/*display: flex;
+	justify-content: center;
+	flex-direction: column;*/
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+	margin: 0;
+	/*padding-bottom: 8rem;*/
+	height: 100%; /*539px;*/
+	max-width: 1140px;
+	width: 100%; 
+    text-align: center;
+}
+
+.jumbotron img {
+	height: 100%;
 }
 
 .jumbo-title {
@@ -149,6 +178,11 @@ h2 {
 	padding-top: 11.85rem;
 }
 
+.jumbotron h1 {
+	font-size: 7.1rem;
+	font-family: Monoton;
+	}
+
 @media only screen and (max-width: 800px) {
 	.jumbotron h1 {
 		font-size: 5.7rem;
@@ -158,15 +192,18 @@ h2 {
 .jumbotron p {
 	width: 90%;
 	max-width: 51.3rem;
+	font-size: 1.7rem;
 	text-align: center;
 	font-weight: 400;
 	color: #ffffff;
 	margin: auto;
-	padding-bottom: 2.8rem;
+	padding-bottom: 17.25rem; /*2.8rem;*/
+	padding-top: 0;
 }
 
 .jumbotron-bike {
 	background-image: url(../images/jumbotron-bike.jpg);
+
 	background-size: cover;
 	background-position: center;
 }
@@ -189,7 +226,6 @@ h2 {
 	background-position: center;
 }
 
-top-nav
 /*  Featured Project  */
 
 .featured-proj {
