@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-* {
-	font-size: 14px;
-}
 
 /*  Global Styles  */
 html {
@@ -20,16 +17,29 @@ body {
 
 .container {
 	width: 100%;
+	margin: 0 auto;
+	margin-top: -5rem;
 }
 
 .relative-wrapper {
 	position: relative;
 	top: -14rem;
 	height: auto;
+	padding: 0;
+	margin: 0;
+	
+	display: flex;
+	width: 100%;
+	justify-content: center;
 }
 
 .relative-wrapper a {
 	font-size: 14px;
+	padding: 1.3rem 0;
+}
+
+.btn {
+	
 }
 
 .button,
@@ -83,6 +93,39 @@ h2 {
 }
 
 .author {}
+
+/* Bootstrap Overrides */
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: inherit;
+  color: #399bd1;
+}
+
+.btn-primary {
+  width: 160px;
+  padding: 1.3rem 0;
+  border: 0;
+  margin-top: 2.8rem;
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  transition: .5s box-shadow;
+}
+
+.btn-primary:hover {
+  background-color: #399bd1;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Slick Overrides */
+
+.slick-slide {
+  outline: none;
+}
 
 /*  Top Nav Bar  */
 .navbar {
@@ -147,16 +190,12 @@ h2 {
 }
 
 .jumbotron {
-	/*display: flex;
-	justify-content: center;
-	flex-direction: column;*/
 	background-size: cover;
 	background-position: center;
 	padding: 0;
 	margin: 0;
 	/*padding-bottom: 8rem;*/
-	height: 100%; /*539px;*/
-	max-width: 1140px;
+	height: 44rem;
 	width: 100%; 
     text-align: center;
 }
@@ -181,7 +220,8 @@ h2 {
 .jumbotron h1 {
 	font-size: 7.1rem;
 	font-family: Monoton;
-	}
+}
+	
 
 @media only screen and (max-width: 800px) {
 	.jumbotron h1 {
@@ -197,7 +237,7 @@ h2 {
 	font-weight: 400;
 	color: #ffffff;
 	margin: auto;
-	padding-bottom: 17.25rem; /*2.8rem;*/
+	/*padding-bottom: 2.8rem;*/
 	padding-top: 0;
 }
 
