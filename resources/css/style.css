@@ -129,6 +129,15 @@ h2 {
 }
 
 /*  Top Nav Bar  */
+
+nav {
+	display: inline-flex;
+}
+
+nav li {
+	display: inline-flex;
+}
+
 .navbar {
 	margin: 0;
 	padding: 1rem 0;
@@ -163,7 +172,6 @@ h2 {
 }
 
 .logo {
-	max-height: 20px;
 	height: auto;
 	max-width: 178px;
 	width: auto;
@@ -231,13 +239,17 @@ h2 {
 .jumbotron p {
 	width: 90%;
 	max-width: 51.3rem;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	text-align: center;
 	font-weight: 400;
 	color: #ffffff;
 	margin: auto;
 	/*padding-bottom: 2.8rem;*/
 	padding-top: 0;
+	text-shadow: -1px -1px 0 #000,
+					1px -1px 0 #000,
+					-1px 1px 0 #000,
+					1px 1px 0 #000;
 }
 
 .jumbotron-bike {
