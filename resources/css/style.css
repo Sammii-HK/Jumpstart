@@ -43,8 +43,7 @@ body {
 	
 }
 
-.button,
-button {
+.button {
 	width: 11.4rem;
 	height: auto;
 	padding: 1.3rem;
@@ -122,6 +121,10 @@ h2 {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
+nav li {
+	display: inline-flex;
+}
+
 /* Slick Overrides */
 
 .slick-slide {
@@ -147,6 +150,7 @@ nav li {
 	margin: 0;
 	font-size: 1.1rem;
 	font-weight: bold;
+	display: inline-flex;
 }
 
 .navbar ul a {
