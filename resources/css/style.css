@@ -142,11 +142,11 @@ h2 {
 .navbar ul a {
 	padding-left: 20px;
 	color: rgba(0, 0, 0, 0.7);
+	text-decoration: none;
 }
 
 .navbar ul a:hover {
 	color: #399bd1;
-	text-decoration: none;
 }
 
 @media only screen and (max-width: 550px) {
