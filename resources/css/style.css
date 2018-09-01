@@ -53,7 +53,7 @@ body {
 	margin: 0 auto;
 	border: none;
 	border-radius: 8px;
-	font-size: 14pt;
+	font-size: 1rem;
 	font-weight: normal;
 	display: flex;
 	justify-content: center;
@@ -363,25 +363,35 @@ footer {
 	justify-content: center; */
 }
 
+.foot {
+	padding: 5.2rem 0;
+}
+
 .cta {
 	font-size: 2.5rem;
 	font-weight: bold;
 	color: rgba(0, 0, 0, 0.7);
-	padding: 5.2rem 0;
 	text-align: center;
 }
 
 footer p {
 	max-width: 42rem;
-	padding-bottom: 2.8rem;
+	padding-bottom: 1rem;
 	text-align: center;
 	margin: auto;
 }
 
-footer button {
-	margin-bottom: 5rem;
+.relative-wrapper-footer {
+	position: relative;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	
+	display: flex;
+	width: 100%;
+	justify-content: center;
 }
 
-.button-container {
-	display: flex;
+.relative-wrapper-footer a {
+	font-size: 14px;
 }
