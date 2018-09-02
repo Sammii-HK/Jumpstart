@@ -135,6 +135,7 @@ h2 {
 
 nav {
 	display: inline-flex;
+	background-color: #ffffff;
 }
 
 nav li {
@@ -155,11 +156,23 @@ nav li {
 
 .navbar ul a {
 	padding-left: 20px;
-	color: rgba(0, 0, 0, 0.7);
+	color: #777777;
 	text-decoration: none;
 }
 
 .navbar ul a:hover {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar ul a:active {
+	color: #399bd1;
+}
+
+.navbar ul .active {
+	color: #399bd1;
+}
+
+.navbar ul .active:hover {
 	color: #399bd1;
 }
 
